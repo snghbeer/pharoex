@@ -21,3 +21,11 @@ HelloWorldler >> greetmsg: string [
 			
 	greetmsg := string 
 ]
+
+{ #category : #initialization }
+HelloWorldler >> initialize [ 
+	"method called when instance of object is created, NEEDS to be defined"
+			
+	super initialize.
+	greetmsg := 'Hello the world is empty !'
+]
