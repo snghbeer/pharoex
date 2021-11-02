@@ -1,7 +1,7 @@
 Class {
 	#name : #Phone,
 	#superclass : #Object,
-	#instVars : [
+	#classVars : [
 		'battery',
 		'model'
 	],
@@ -20,7 +20,6 @@ Phone >> battery: max [
 
 { #category : #initialization }
 Phone >> initialize: name [
-	super initialize .
 	battery := 5.
 	model := name
 ]
