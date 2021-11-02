@@ -21,13 +21,15 @@ MyBoolean >> myAnd: aBoolean [
 ]
 
 { #category : #'logical operations' }
-MyBoolean >> myIfFalse: aInt [ 
-	(self state = 2) ifTrue: [ ^self state ].
-	(self state = 1) ifTrue: [ ^self state ].
+MyBoolean >> myIfFalse: aInt [
+	(self state = aInt) ifTrue: [ ^aInt ].
+	^aInt
 ]
 
 { #category : #'logical operations' }
 MyBoolean >> myIfTrue: aInt [
+	(self state = aInt) ifFalse: [ ^aInt ].
+	^aInt
 ]
 
 { #category : #'logical operations' }

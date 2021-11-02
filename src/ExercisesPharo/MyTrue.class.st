@@ -15,7 +15,7 @@ MyTrue >> initialize [
 { #category : #'logical operations' }
 MyTrue >> myAnd: aBool [
 	aBool ifFalse: [ ^MyFalse new ].
-	^self
+	aBool ifTrue: [ ^self ].
 ]
 
 { #category : #'logical operations' }
