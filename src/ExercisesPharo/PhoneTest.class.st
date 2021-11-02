@@ -8,8 +8,8 @@ Class {
 	#category : #ExercisesPharo
 }
 
-{ #category : #'as yet unclassified' }
-PhoneTest >> initPhoneTest [ 
+{ #category : #tests }
+PhoneTest >> testInitialize [
 			
 	| gsm |
 	gsm := Phone new: 'Nokia-3310'.
