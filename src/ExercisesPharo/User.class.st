@@ -33,7 +33,7 @@ User >> initialize: username withMdl: modelname [
 	self initialize .
 	name:= username .
 	calld := 0 .
-	phone := Phone new modelname .
+	phone := Phone new: modelname .
 ]
 
 { #category : #accessing }
