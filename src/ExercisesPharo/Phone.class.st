@@ -1,7 +1,7 @@
 Class {
 	#name : #Phone,
 	#superclass : #Object,
-	#instVars : [
+	#classVars : [
 		'battery',
 		'model'
 	],
@@ -13,6 +13,11 @@ Phone >> battery [
 	^battery 
 ]
 
+{ #category : #'as yet unclassified' }
+Phone >> battery: aInt [
+	battery := aInt
+]
+
 { #category : #initialization }
 Phone >> initialize: name [
 	battery := 5.
@@ -22,4 +27,9 @@ Phone >> initialize: name [
 { #category : #accessing }
 Phone >> model [
 	^model 
+]
+
+{ #category : #'as yet unclassified' }
+Phone >> model: name [
+	model := name
 ]
