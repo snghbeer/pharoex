@@ -11,3 +11,8 @@ MyFalse >> initialize [
 	super initialize .		
 	state:= 2
 ]
+
+{ #category : #'logical operations' }
+MyFalse >> not [
+	^MyTrue new
+]

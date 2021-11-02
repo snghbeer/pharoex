@@ -1,11 +1,15 @@
 Class {
 	#name : #MyBoolean,
 	#superclass : #Object,
-	#instVars : [
+	#classVars : [
 		'state'
 	],
 	#category : #ExercisesPharo
 }
+
+{ #category : #'logical operations' }
+MyBoolean >> and: aboolean [
+]
 
 { #category : #initialization }
 MyBoolean >> initialize [ 
@@ -16,10 +20,17 @@ MyBoolean >> initialize [
 	state := 0
 ]
 
+{ #category : #'logical operations' }
+MyBoolean >> not [
+]
+
+{ #category : #controlling }
+MyBoolean >> or: aboolean [
+]
+
 { #category : #accessing }
 MyBoolean >> state [
-	"comment stating purpose of instance-side method"
-	"scope: class-variables  &  instance-variables"	
+	"returns the state"
 			
 	^state
 ]
