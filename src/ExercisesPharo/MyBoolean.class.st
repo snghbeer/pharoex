@@ -7,10 +7,6 @@ Class {
 	#category : #ExercisesPharo
 }
 
-{ #category : #'logical operations' }
-MyBoolean >> and: aboolean [
-]
-
 { #category : #initialization }
 MyBoolean >> initialize [ 
 	"comment stating purpose of instance-side method"
@@ -40,10 +36,6 @@ MyBoolean >> myOr: aBoolean [
 
 { #category : #'logical operations' }
 MyBoolean >> not [
-]
-
-{ #category : #controlling }
-MyBoolean >> or: aboolean [
 ]
 
 { #category : #accessing }
