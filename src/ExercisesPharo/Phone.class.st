@@ -1,7 +1,7 @@
 Class {
 	#name : #Phone,
 	#superclass : #Object,
-	#classVars : [
+	#instVars : [
 		'battery',
 		'model'
 	],
