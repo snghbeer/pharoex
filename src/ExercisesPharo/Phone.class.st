@@ -13,7 +13,7 @@ Phone >> battery [
 	^battery 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 Phone >> battery: aInt [
 	battery := aInt
 ]
@@ -29,7 +29,7 @@ Phone >> model [
 	^model 
 ]
 
-{ #category : #'as yet unclassified' }
+{ #category : #accessing }
 Phone >> model: name [
 	model := name
 ]
