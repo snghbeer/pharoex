@@ -13,6 +13,18 @@ MyTrue >> initialize [
 ]
 
 { #category : #'logical operations' }
+MyTrue >> myAnd: aBool [
+	aBool ifFalse: [ ^MyFalse new ].
+	^self
+]
+
+{ #category : #'logical operations' }
+MyTrue >> myOr: aBool [
+	aBool ifTrue: [ ^self ] .
+	aBool ifFalse: [ ^MyFalse  new ]
+]
+
+{ #category : #'logical operations' }
 MyTrue >> not [ 
 	^MyFalse new
 ]

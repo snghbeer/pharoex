@@ -21,6 +21,24 @@ MyBoolean >> initialize [
 ]
 
 { #category : #'logical operations' }
+MyBoolean >> myAnd: aBoolean [
+]
+
+{ #category : #'logical operations' }
+MyBoolean >> myIfFalse: aInt [ 
+	(self state = 2) ifTrue: [ ^self state ].
+	(self state = 1) ifTrue: [ ^self state ].
+]
+
+{ #category : #'logical operations' }
+MyBoolean >> myIfTrue: aInt [
+]
+
+{ #category : #'logical operations' }
+MyBoolean >> myOr: aBoolean [
+]
+
+{ #category : #'logical operations' }
 MyBoolean >> not [
 ]
 
