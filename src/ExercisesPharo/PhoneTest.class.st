@@ -12,7 +12,8 @@ Class {
 PhoneTest >> testInitialize [
 			
 	| gsm |
-	gsm := Phone new: 'Nokia-3310'.
+	gsm := Phone new.
+	gsm modelname: 'iPhone'.
 	self assert: (gsm modelname notNil)
 	
 ]
