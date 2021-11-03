@@ -3,7 +3,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'battery',
-		'model'
+		'modelname',
+		'modelame'
 	],
 	#category : #ExercisesPharo
 }
@@ -21,15 +22,15 @@ Phone >> battery: aInt [
 { #category : #initialization }
 Phone >> initialize: name [
 	battery := 5.
-	model := name
+	modelame := name
 ]
 
 { #category : #accessing }
 Phone >> model [
-	^model 
+	^modelname 
 ]
 
 { #category : #accessing }
 Phone >> model: name [
-	model := name
+	modelname := name
 ]

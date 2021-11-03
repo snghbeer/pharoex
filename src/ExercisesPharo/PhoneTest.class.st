@@ -13,6 +13,6 @@ PhoneTest >> testInitialize [
 			
 	| gsm |
 	gsm := Phone new: 'Nokia-3310'.
-	self assert: (gsm model notNil)
+	self assert: (gsm modelname notNil)
 	
 ]
