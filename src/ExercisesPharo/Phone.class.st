@@ -20,8 +20,10 @@ Phone >> battery: aInt [
 
 { #category : #initialization }
 Phone >> initialize: name [
+	super initialize .
 	battery := 5.
-	modelname := name
+	modelname := name .
+	^self
 ]
 
 { #category : #accessing }
