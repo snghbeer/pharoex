@@ -19,11 +19,10 @@ Phone >> battery: aInt [
 ]
 
 { #category : #initialization }
-Phone >> initialize: name [
+Phone >> initialize [
 	super initialize .
 	battery := 5.
-	modelname := name .
-	^self
+	modelname := 'userX' .
 ]
 
 { #category : #accessing }
