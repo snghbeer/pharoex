@@ -25,8 +25,8 @@ Phone >> initialize: name [
 ]
 
 { #category : #accessing }
-Phone >> model: name [
-	modelname := name
+Phone >> modelname [
+	^modelname
 ]
 
 { #category : #accessing }
