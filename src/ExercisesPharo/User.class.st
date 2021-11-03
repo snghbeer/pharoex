@@ -21,19 +21,35 @@ User >> calld: newduration [
 ]
 
 { #category : #initialization }
-User >> initialize: username [
+User >> initialize [
 	super initialize .
+	name := 'Anonym' .
+	calld := 0.
+	phone := Phone new 
+]
+
+{ #category : #initialization }
+User >> initialize: username [
+self initialize.
 	name:= username .
 	calld := 0.
 	phone := Phone new 
 ]
 
 { #category : #initialization }
-User >> initialize: username withMdl: modelname [ 
-	self initialize .
-	name:= username .
-	calld := 0 .
-	phone := Phone new: modelname .
+User >> initialize: username phone: modelname [ 
+	super initialize .
+	[ 
+		self name: username .
+		self calld: 0 .
+		self phone: (Phone new: modelname) .
+	 ]
+
+]
+
+{ #category : #accessing }
+User >> name [
+	^name
 ]
 
 { #category : #accessing }

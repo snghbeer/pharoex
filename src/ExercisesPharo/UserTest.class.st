@@ -10,13 +10,12 @@ Class {
 }
 
 { #category : #tests }
-UserTest >> UserInitWithPhoneModelTest [
-	"comment stating purpose of instance-side method"
-	"scope: class-variables  &  instance-variables"	
+UserTest >> testUserInit [
 			
 	| aUser aPhone |
-	aUser := User new:'Jean' .
+	aUser := User new .
 	aPhone := Phone new .
+	aUser name: 'Jean' .
 	aPhone modelname: 'iPhone' .
 	aUser phone: aPhone .
 	self assert: (aUser phone notNil)

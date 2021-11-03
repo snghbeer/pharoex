@@ -25,6 +25,13 @@ Phone >> initialize [
 	modelname := 'userX' .
 ]
 
+{ #category : #initialization }
+Phone >> initialize:aModelname [
+	super initialize .
+	self battery: 5.
+	self modelname: aModelname 
+]
+
 { #category : #accessing }
 Phone >> modelname [
 	^modelname
